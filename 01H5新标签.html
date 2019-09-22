@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5新增的语义化标签</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+        }
+        header,nav,footer{
+        background-color: #0ff;
+        height: 120px;
+        }
+        article,aside{
+            background-color: #0f0;
+            float: left;
+            width: 50%;
+            height: 120px;
+        }
+        section{
+            background-color: #ff0;
+        }
+    </style>
+    <!-- ie9中支持得不太好要display：block -->
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <article>内容
+        <section>
+            另一个块级元素(比div大的)
+        </section>
+    </article>
+    <aside>侧边栏</aside>
+    <nav>
+        导航
+    </nav>
+    <footer>
+        底部
+    </footer>
+
+
+
+
+    
+</body>
+</html>

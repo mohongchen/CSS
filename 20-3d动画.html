@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            /* 透视写在被观察元素的父盒子上 */
+            perspective: 200px;
+            /* 透视越小物体越大(相当于眼睛距离物体越近,物体距离屏幕越远) */
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: #0ff;
+            /* transform: translateZ(100px); */
+            /* translateZ 沿着Z轴移动 */
+            /* 单位一般为px */
+            /* 3D移动可以简写为： */
+            transform: translate3d(400px,100px,100px);
+            /* 透视写在被观察元素的父盒子上 */
+        }
+        .test2{
+            background-color: #f0f;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            transform: translateZ(2px);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="test2"></div>
+</body>
+</html>

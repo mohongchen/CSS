@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        ul li:first-child {
+            background-color: #00f;
+        }
+
+        ul li:last-child {
+            background-color: #0f0;
+        }
+
+        /* 选中第几个子元素 */
+        ul li:nth-child(2) {
+            background-color: #f00;
+        }
+
+        /* 奇数
+        ol li:nth-child(even){
+            background-color: #ff0;
+        }
+        偶数
+        ol li:nth-child(odd){
+            background-color: #0ff;
+        } */
+        /* n是公式 从0开始计算 */
+        /* ol li:nth-child(2n) {
+            background-color: #0ff;
+        } */
+
+        /* ol li:nth-child(2n+1) {
+            background-color: #ff0;
+        } */
+        /* 前五个 */
+        ol li:nth-child(-n+5) {
+        background-color: #ff0;
+        }
+        /* nth-child()选择父元素中第n个元素不管元素是否是同一个类型 */
+        /* 因此在选择div中的span只能这样跳过第一个p */
+        div span:nth-child(2){
+            background-color: #f0f;
+        }
+        /* 选中指定类型的元素 */
+        div span:first-of-type{
+            background-color: purple;
+        }
+        div span:last-of-type{
+        background-color: peru;
+        }
+        div span:nth-of-type(2){
+        background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ol>
+    <div>
+        <p>这是一个p</p>
+        <span>这是一个span</span>
+        <span>这是一个span</span>
+        <span>这是一个span</span>
+    </div>
+</body>
+
+</html>

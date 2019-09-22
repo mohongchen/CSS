@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- 谷歌浏览器禁用网页自动播放声音 -->
+    <!-- loop循环 -->
+    <!-- <audio src="media/snow.mp3" controls='controls' autoplay='autoplay' loop='loop'></audio> -->
+    <!-- 因为不同浏览器支持不同格式，可以为这个音频准备多个格式 -->
+    <audio controls="controls">
+        <source src="media/snow.mp3" type="audio/mpeg">
+        <source src="media/snow.ogg" type="audio/ogg">
+        您的浏览器太low了,不支持播放
+    </audio>
+
+    <br>
+    <video width="300px"  type="video/mp4" autoplay="autoplay" loop="loop" muted="muted">
+        <!-- autoplay自动播放 controls播放控件 loop循环播放 poster加载等待画面 muted 静音播放(解决谷歌禁用自动播放) -->
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogg" type="video/ogg">
+        您的浏览器太low了,不支持播放
+    </video>
+    <video width="300px"controls='controls' type="video/mp4" loop="loop" poster="media/pig.jpg">
+        <!-- autoplay自动播放 controls播放控件 loop循环播放 poster加载等待画面 muted 静音播放(解决谷歌禁用自动播放) -->
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogg" type="video/ogg">
+        您的浏览器太low了,不支持播放
+    </video>
+    
+</body>
+
+</html>

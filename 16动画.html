@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 定义动画 */
+        /* 0和100%可以用from和to替换 */
+        /* 动画序列 */
+        @keyframes move {
+            0% {
+                transform: translateX(0px);
+            }
+            25%{
+                transform: translate(1000px,0);
+            }
+            50%{
+                transform: translate(1000px,500px);
+            }
+            75%{
+                transform: translate(0,500px);
+            }
+            100% {
+                transform: translate(0,0);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #0ff;
+            /* 调用动画 */
+            animation-name: move;
+            /* 动画一个周期的时间 */
+            animation-duration: 4s;
+            /* 运动的曲线 linear*/
+            animation-timing-function: ease;
+            /* 动画多久后执行默认为0 */
+            animation-delay: 1s;
+            /* 动画播放次数默认为1 infinite无限 */
+            animation-iteration-count: infinite;
+            /* 是否反方向播放默认nomal */
+            animation-direction: alternate;
+            /* 是否回到起始状态默认backwards */
+            animation-fill-mode: forwards;
+
+        }
+        div:hover{
+            /* 鼠标经过div停止动画离开继续动画默认running */
+            animation-play-state: paused;
+        }
+        /* animation：动画名称 持续时间 运动曲线(匀速linear) 何时开始 播放次数(无限infinite ) 是否反方向(逆播放alternate) 动画起始或者结束的状态(保持forwards/回到起始backwards); */
+        /* 简写 */
+        /* 鼠标经过停止不写到简写里面 */
+        /* animation: name duration timing_function delay iteration_count direction fill_mode; */
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
