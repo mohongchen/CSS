@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(images/bg_81ab3d6.jpg) no-repeat;
+        }
+
+        div {
+            position: absolute;
+            top: 280px;
+            right: 380px;
+            width: 93px;
+            height: 93px;
+            z-index: 5;
+            cursor: pointer;
+        }
+
+        div::before {
+            content: '';
+            position: absolute;
+            width: 93px;
+            height: 93px;
+            background: url(images/index_z_9769688.png) no-repeat;
+            background-position: -744px -819px;
+            z-index: 4;
+            animation: xuan 3s linear infinite;
+        }
+
+        div::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 21px;
+            height: 25px;
+            margin-top: -12px;
+            margin-left: -10px;
+            background: url(images/index_z_9769688.png);
+            background-position: -2290px -107px;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes xuan {
+            0% {}
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

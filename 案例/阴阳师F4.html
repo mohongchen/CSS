@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,html{
+            height: 100%;
+        }
+        body {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box {
+            position: absolute;
+            bottom: 20px;
+            width: 660px;
+            height: 149px;
+            animation: move 10s linear infinite;
+        }
+
+        .box div {
+            float: right;
+        }
+
+        .first {
+            width: 154px;
+            height: 149px;
+            overflow: hidden;
+        }
+        .second{
+            width: 167px;
+            height: 176px;
+            overflow: hidden;
+        }
+        .third{
+            width: 161px;
+            height: 149px;
+            overflow: hidden;
+        }
+        .fourth{
+            width: 171px;
+            height: 157px;
+            overflow: hidden;
+
+        }
+        .first img,.second img,.third img,.fourth img{
+            display: block;
+            animation: wark .8s steps(2) infinite;
+        }
+        /* .second {
+            width: 154px;
+            height: 149px;
+            background: url(images/txgc_6d0e9e5.png) no-repeat;
+            animation: wark .8s steps(2) infinite;
+        }
+
+        .first {
+            width: 154px;
+            height: 149px;
+            background: url(images/txgc_6d0e9e5.png) no-repeat;
+            animation: wark .8s steps(2) infinite;
+        }
+
+        .first {
+            width: 154px;
+            height: 149px;
+            background: url(images/txgc_6d0e9e5.png) no-repeat;
+            animation: wark .8s steps(2) infinite;
+        } */
+
+        @keyframes wark {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-100%)
+            }
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(1600px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="first">
+            <img src="images/txgc_6d0e9e5.png" alt="">
+        </div>
+        <div class="second">
+            <img src="images/txgh_fee2457.png" alt="">
+        </div>
+        <div class="third">
+            <img src="images/txgl_c15cfd8.png" alt="">
+        </div>
+        <div class="fourth">
+            <img src="images/txgq_d281c9b.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
