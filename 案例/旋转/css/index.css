@@ -1,0 +1,54 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #080325;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    background: url(../images/banner_bg1.jpg);
+    background-size: cover;
+    transform: scale(0.5);
+}
+
+.i-r {
+    position: absolute;
+    background-image: url(../images/spr_bannerPathway.png);
+    background-position: -2436px 0px;
+    background-repeat: no-repeat;
+    width: 719px;
+    height: 719px;
+    animation: zhuan 30s steps(360) infinite;
+}
+.i-l{
+    position: absolute;
+    left: 35px;
+    top: 22px;
+    background-image: url(../images/spr_bannerPathway.png);
+    background-position: -2436px -724px;
+    background-repeat: no-repeat;
+    width: 648px;
+    height: 674px;
+    animation: zhuana 20s linear infinite;
+}
+@keyframes zhuan{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+@keyframes zhuana{
+    100%{
+        transform: rotate(-360deg)
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 700px;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+            
+            
+        }
+        .hed{
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: #0ff;
+            z-index: 9999;
+        }
+        .new{
+            
+            display: inline-block;
+            height: 30px;
+            width: 400px;
+            line-height: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            
+        }
+        .new span{
+            position: absolute;
+            left: 100%;
+            animation: move 8s linear infinite;
+            z-index: 1;
+        }
+        @keyframes move {
+            100%{left: -100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hed">
+        </div>
+        <div class="new"><span>从前有座山，山里有座庙，庙里有个和尚讲故事</span></div>
+        
+    </div>
+</body>
+</html>
