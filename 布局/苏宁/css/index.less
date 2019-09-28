@@ -1,0 +1,96 @@
+// 导入less文件
+@import 'common';
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    line-height: 1.5;
+}
+
+.search-content {
+    width: 15rem;
+    height: 88rem / 50;
+    background-color: #ffc001;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+    .classify {
+        width: 44rem / 50;
+        height: 70rem / 50;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 100%;
+        margin: 11rem/50 25rem/50 7rem/50 24rem/50;
+    }
+
+    .search {
+        flex: 1;
+
+        input {
+            height: 66rem / 50;
+            border-radius: 33rem / 50;
+            background: #fff2cc;
+            border: 0;
+            margin-top: 12rem / 50;
+            width: 100%;
+            outline: none;
+            font-size: 25rem / 50;
+            text-indent: 55rem / 50;
+            color: #757575;
+        }
+    }
+
+    .login {
+        width: 95rem / 50;
+        height: 88rem / 50;
+        color: #fff;
+        font-size: 25rem/50;
+        text-align: center;
+        line-height: 88rem / 50;
+    }
+}
+
+.banner {
+    height: 368rem / 50;
+    width: 750rem / 50;
+
+    img {
+        width: 100%;
+    }
+}
+
+.ad {
+    display: flex;
+
+    a {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+nav {
+    width: 750rem / 50;
+
+    a {
+        box-sizing: border-box;
+        width: 150rem / 50;
+        height: 140rem / 50;
+        float: left;
+        text-align: center;
+        img {
+            display: block;
+            width: 82rem /50;
+            height: 82rem /50;
+            margin: 0 auto 5rem/50;
+        }
+        font-size: 25rem /50;
+        color: #333;
+    }
+}

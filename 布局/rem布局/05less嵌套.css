@@ -1,0 +1,15 @@
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: #0ff;
+}
+.header a {
+  color: purple;
+}
+.nav .logo {
+  color: blueviolet;
+}
+.nav::before {
+  content: 'aaaa';
+  cursor: pointer;
+}
