@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>响应式工具</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .row div{
+                background-color: #0f0;
+            }
+            .row div:nth-child(3){
+                background-color: #0ff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <!-- 只在大屏显示 -->
+                    <span class="visible-lg">欸嘿嘿</span>
+                </div>
+                <div class="col-xs-3">2</div>
+                <!-- 在中等屏幕下隐藏 -->
+                <div class="col-xs-3 hidden-md">3zzzzz</div>
+                <div class="col-xs-3">4</div>
+            </div>
+        </div>
+        
+    </body>
+</html>
